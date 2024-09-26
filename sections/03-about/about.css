@@ -1,0 +1,223 @@
+.about {
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.about-content {
+    display: none;
+}
+
+.about h1 {
+    color: #590202;
+    text-align: center;
+    padding: 20px 30px 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.about__image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.selling-food-image {
+    width: 80%;
+}
+
+.about h2 {
+    text-align: center;
+    color: #D92D07;
+    padding: 10px 0 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about__text {
+    text-align: center;
+    color: #590202;
+    font-size: 1.5rem;
+    padding: 0 30px 0;
+    align-self: center;
+    font-weight: 700;
+}
+
+.about__mission {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__mission-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10%;
+}
+
+.mission-image {
+    width: 50%;
+}
+
+.about__mission h2 {
+    font-weight: 700;
+}
+
+.about__mission p {
+    align-self: center;
+    border: 5px solid #FFFADF;
+    width: 90%;
+    padding: 10px 20px 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #590202;
+}
+
+.about__vision {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about__vision-image-container {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vision-image {
+    width: 30%;
+}
+
+.about__vision h2 {
+    font-weight: 700;
+}
+
+.about__vision p {
+    align-self: center;
+    border: 5px solid #FFFADF;
+    width: 90%;
+    padding: 10px 20px 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #590202;
+}
+
+@media (min-width: 930px) {
+    .about h1 {
+        display: none;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: #D9A50D; /* Color de fondo específico para About */
+        color: #D92D07; /* Color de texto en About */
+        text-align: center;
+        background-color: #F8F2D7;
+    }
+
+    .mission-vision h2{
+        text-align: center;
+    }
+    
+    .about-content h1 {
+        font-family: 'Playfair', serif;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-content {
+        margin: 0 auto;
+    }
+    
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem; /* Espacio entre el texto y la imagen */
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    .text-box {
+        background-color: #fff; /* Fondo blanco para el cuadro de texto */
+        color: #333; /* Color de texto en el cuadro */
+        padding: 2rem;
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    }
+    
+    .text-box h2 {
+        font-family: 'Playfair', serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #D92D07;
+    }
+    
+    .text-box p {
+        font-size: 1.6rem;
+        color: #590202;
+    }
+    
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+    
+    /* Misión y Visión */
+    .mission-vision {
+        margin-top: 2rem;
+    }
+    
+    .mission,
+    .vision {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 2rem; /* Espacio entre imagen y texto */
+    }
+    
+    .mission-image,
+    .vision-image {
+        flex: 1;
+    }
+    
+    .mission-text,
+    .vision-text {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .mission h2,
+    .vision h2 {
+        font-family: 'Playfair', serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #D92D07;
+    }
+    
+    .mission p,
+    .vision p {
+        font-size: 1.6rem;
+        color: #590202;
+    }
+    
+    .mission-image img,
+    .vision-image img {
+        max-width: 20rem;
+        height: auto;
+        border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+}
