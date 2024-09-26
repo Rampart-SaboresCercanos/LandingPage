@@ -1,0 +1,103 @@
+.home {
+    background-color: #f8f2d7;
+    padding-bottom: 20px;
+}
+
+.home-desktop {
+    display: none; /* Ocultar en móvil */
+}
+
+.home__image-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.food-image {
+    width: 80%;
+}
+
+.home__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home__text h1{
+    width: 80%;
+    font-size: 2.5rem;
+    color: #D92D07;
+    padding-bottom: 10px;
+}
+
+.home__text p{
+    width: 80%;
+    font-size: 1.5rem;
+    color: #55A603;
+}
+
+.home__call-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 3rem;
+}
+
+.home__whatsapp--container {
+    margin-right: 20px;
+}
+
+.whatsapp__text-container {
+    padding: 8px;
+    border-radius: 15px;
+    width: 25%;
+    border: solid #D9A60D 1px;
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.whatsapp__text-container p {
+    color: #FF9900;
+}
+
+@media (min-width: 930px) {
+    .home {
+        background-color: #FBD792;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        height: 500px;
+    }
+
+    .home__call-us {
+        display: none;
+    }
+
+    .home__image-container {
+        height: 80%;
+        padding: 0;
+    }
+
+    .food-image {
+        width: auto;
+    }
+
+    .home__text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .home__text h1 {
+        font-size: 4rem;
+    }
+
+    .home__text p {
+        font-size: 2rem;
+    }
+}
