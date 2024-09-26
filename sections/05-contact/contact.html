@@ -1,0 +1,72 @@
+<!-- sections/05-contact/home.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="contact">
+        <h1 class="contact__title">CONTÁCTANOS</h1>
+
+        <h2 class="contact__input">NOMBRE:</h2>
+        <input type="text" placeholder="Ingresa tu nombre" class="contact__input-text">
+        <h2 class="contact__input">APELLIDOS:</h2>
+        <input type="text" placeholder="Ingresa tus apellidos" class="contact__input-text">
+        <h2 class="contact__input">EMAIL:</h2>
+        <input type="text" placeholder="Ingresa tu email" class="contact__input-text">
+        <h2 class="contact__input">MENSAJE:</h2>
+        <textarea id="message" name="message" class="contact__input-text" rows="10" placeholder="Ingresa tu mensaje aquí..."></textarea>
+
+        <p><button class="input__button">Enviar</button></p>
+
+        <h3 class="contact__subtitle-qr">Escanear QR</h3>
+        <figure class="QR-container">
+            <img src="/assets/svg/qr-code-svgrepo-com.svg" alt="" class="QR-icon">
+        </figure>
+
+        <div class="contact__download-section">
+            <h3 class="contact__subtitle-download">Descarga</h3>
+            <figure class="app-store-container">
+                <img src="/assets/svg/app-store-icon.svg" alt="" class="app-store-icon">
+            </figure>
+            <figure class="google-play-container">
+                <img src="/assets/svg/google-play-icon.svg" alt="" class="google-play-icon">
+            </figure>
+        </div>
+    </section>
+
+    <h1 class="contact__title_2">CONTÁCTANOS</h1>
+    <section class="contact-desktop">
+        <div class="contact-left">
+            <label for="email">NOMBRES:</label>
+            <input type="text" id="name" placeholder="Ingresa tu nombre">
+            
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" placeholder="Ingresa tu email">
+            
+            <div class="qr-section">
+                <p>Escanear QR</p>
+                <img src="/assets/svg/qr-code-svgrepo-com.svg" alt="Código QR">
+            </div>
+        </div>
+        
+        <div class="contact-right">
+            <label for="lastname">APELLIDOS:</label>
+            <input type="text" id="lastname" placeholder="Ingresa tu apellido">
+            
+            <label for="message">MENSAJE:</label>
+            <textarea id="message" placeholder="Ingresa tu mensaje"></textarea>
+            
+            <div class="store-links">
+                <p>Descarga aquí</p>
+                <img src="/assets/svg/app-store-icon.svg" alt="App Store">
+                <img src="/assets/svg/google-play-icon.svg" alt="Google Play">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

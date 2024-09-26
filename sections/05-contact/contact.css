@@ -1,0 +1,149 @@
+.contact {
+    background-color: #FFFADF;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-desktop {
+    display: none;
+}
+
+.contact__title_2 {
+    display: none;
+}
+
+.contact__title {
+    color:#590202;
+    font-size: 2.5rem;
+
+}
+
+.contact__input {
+    color: #D92D07;
+    font-weight: 700;
+}
+
+.contact__input-text {
+    width: 60%;
+    max-width: 200px;
+    font-family: "Lora", system-ui;
+}
+
+.input__button {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.input__button:hover {
+    cursor: pointer;
+}
+
+.contact__subtitle-qr {
+    margin-top: 40px;
+    font-size: 2rem;
+    color:#590202;
+}
+
+.contact__subtitle-download {
+    font-size: 2rem;
+    color:#590202;
+}
+
+.contact__download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: auto;
+}
+
+.QR-container {
+   margin-top: -20px;
+}
+
+@media (min-width: 756px) {
+
+    .contact__title_2 {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+        color: #D92D07;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .contact-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 15rem ;
+        
+    }
+
+    .contact-left, .contact-right {
+        width: 48%; /* Para que ambos lados ocupen casi la mitad de la sección */
+    }
+    
+    /* Estilos para los inputs */
+    .contact-left input, .contact-right input, .contact-right textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    /* Espaciado para el QR y las imágenes */
+    .qr-section {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .qr-section p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #590202;
+    }
+    
+    .qr-section img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    label {
+        font-size: 1.5rem;
+        color: #590202;
+    }
+    
+    .store-links {
+        display: flex;
+        flex-direction: column;  /* Mantiene las imágenes en columna */
+        justify-content: center; /* Centra verticalmente las imágenes */
+        align-items: center;     /* Alinea horizontalmente las imágenes */
+        gap: 0px;               /* Controla el espacio entre las imágenes */
+    }
+    
+    /* Ajuste de tamaño para las imágenes */
+    .store-links img {
+        max-width: 150px; /* Aumenta el tamaño de las imágenes */
+        max-height: 100px;
+        /* Elimina el margin-bottom y usa gap para controlar el espaciado */
+    }
+
+    .store-links p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #590202;
+    }
+}
