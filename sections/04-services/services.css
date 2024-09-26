@@ -1,0 +1,202 @@
+.services {
+    background-color: #fbd691;
+    padding-top: 20px;
+}
+
+.services-desktop {
+  display: none;
+}
+
+.services h1 {
+    color: #590202;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 0 25px 0;
+}
+
+.services h2 {
+    color: #D92D07;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services p {
+    color: #590202;
+    padding: 15px 0 15px;
+    margin: 0 10% 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Contenedor del slider */
+.slider-container {
+    background-color: #fbd691;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Estilo de las cards dentro del slider */
+  .card-slider {
+    display: flex;
+    gap: 20px; /* Espacio entre cards */
+  }
+  
+  /* Estilo de cada card */
+  .card-mobile {
+    scroll-snap-align: start;
+    flex: 0 0 80%; /* Cada card ocupa el 80% del ancho de la pantalla */
+    background-color: #FFFADF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-slider h2 {
+    align-self: center;
+    position: relative;
+    border-bottom: 5px solid #D92D07;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D92D07;
+  }
+
+  /* Estilo de las imágenes */
+  .card-image {
+    width: 40%;
+    border-radius: 10px;
+  }
+  
+  .card-image-2 {
+    width: 80%;
+    border-radius: 10px;
+  }
+  
+  .card-image-3 {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Título de la card */
+  .card-title {
+    font-size: 1.6rem;
+    margin: 10px 0;
+  }
+  
+  /* Botón de la card */
+  .card-button {
+    margin-top: 5%;
+    background-color: #D9A60D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .card-button:hover {
+    background-color: #D9A60D;
+  }
+  
+  @media (min-width: 930px) {
+    .services {
+      display: none;
+    }
+
+    .slider-container {
+      display: none;
+    }
+    
+    .services-desktop {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      background-color: #F2EDD5; /* Color de fondo para la sección de servicios */
+      color: #333;
+      text-align: center;
+  }
+  
+  .services-desktop h1 {
+      font-family: 'Playfair', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #D92D07;
+  }
+  
+  .services-description {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+  }
+  
+  .services-description h2 {
+      font-family: 'Playfair', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #D92D07;
+  }
+  
+  .services-description p {
+      font-size: 1.6rem;
+      color: #590202;
+  }
+  
+  .services-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+  }
+  
+  .card {
+      flex: 1;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+  }
+  
+  .card h3 {
+      font-family: 'Playfair', serif;
+      color: #590202;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+  }
+  
+  .card img {
+      max-width: 70%; /* Reduce el tamaño de la imagen al 70% del contenedor de la tarjeta */
+      height: 20rem;
+      display: block;
+      margin: 0 auto 1rem;
+  }
+  
+  .card button {
+      background-color: #55A603; /* Botón verde */
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.4rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+      background-color: #3d7504; /* Efecto hover */
+  }
+  
+  .card button br {
+      display: none; /* Para mantener el botón en una línea */
+  }
+  
+  }
