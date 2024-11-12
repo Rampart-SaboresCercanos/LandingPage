@@ -107,6 +107,15 @@
     color: #590202;
 }
 
+.about-the-team {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    place-items: center;
+    margin-top: 15px;
+}
+
 @media (min-width: 930px) {
     .about h1 {
         display: none;
@@ -211,7 +220,7 @@
     
     .mission p,
     .vision p {
-        font-size: 1.6rem;
+        font-size: 1.6rem;  
         color: #590202;
     }
     
@@ -220,5 +229,13 @@
         max-width: 20rem;
         height: auto;
         border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+
+    .about-the-team {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        place-items: center;
     }
 }

@@ -107,6 +107,17 @@
   .card-button:hover {
     background-color: #D9A60D;
   }
+
+  .about-the-product {
+    color: red;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    place-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   
   @media (min-width: 930px) {
     .services {
@@ -199,4 +210,14 @@
       display: none; /* Para mantener el botón en una línea */
   }
   
+  .about-the-product {
+    color: red;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    place-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   }
